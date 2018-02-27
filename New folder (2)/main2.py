@@ -91,6 +91,8 @@ print("Li: "+str(Li_Percent)+"%" + "("+ str(Li)+")")
 print("O\'Tooley: "+str(OTooley_Percent)+"%" + "("+ str(OTooley)+")")
 print("-----------------------------")
 
+print(Winner_Percent)
+
 if Winner_Percent == Vestal_Percent:
     print("Winner: " + "Vestal")
 elif Winner_Percent == Torres_Percent:

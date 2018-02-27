@@ -65,22 +65,37 @@ with open(csvpath2, newline = '') as csvfile2:
     #subtract header
     row_count2 = len(data2) - 1
         
-print("Financial Analysis" + "\n + ----------------------------------" )
+print("Financial Analysis 1" + "\n + ----------------------------------" )
 
-Total_Months = monthcount1 + monthcount2
-print("Total Months: " + str(Total_Months))
+Total_Months1 = monthcount1
+print("Total Months: " + str(Total_Months1))
 
-Total_Revenue = totalrevenue1 + totalrevenue2
-print("Total Revenue: "+ '$' + str(Total_Revenue))
+Total_Revenue1 = totalrevenue1
+print("Total Revenue: "+ '$' + str(Total_Revenue1))
 
-Average_Revenue_Change = (revenuechange1 + revenuechange2) / Total_Months
-print("Average Revenue Change: " + '$' + str(Average_Revenue_Change))
+Average_Revenue_Change1 = (revenuechange1) / Total_Months1
+print("Average Revenue Change: " + '$' + str(Average_Revenue_Change1)+ "\n")
 
 Greatest_Increase_in_Revenue1 = max(revenuechangelist1)
 Greatest_Decrease_in_Revenue1 = min(revenuechangelist1)
+
 Greatest_Increase_in_Revenue2 = max(revenuechangelist2)
 Greatest_Decrease_in_Revenue2 = min(revenuechangelist2)
-Greatest_Increase_in_Revenue = max(Greatest_Increase_in_Revenue1,Greatest_Increase_in_Revenue2)
-Greatest_Decrease_in_Revenue = min(Greatest_Decrease_in_Revenue2,Greatest_Decrease_in_Revenue2)
-print("Greatest Increase in Revenue: " + '$' + str(Greatest_Increase_in_Revenue))
-print("Greatest Decrease in Revenue: " + '$' + str(Greatest_Decrease_in_Revenue))
+
+print("Greatest Increase in Revenue: " +  '$' + str(Greatest_Increase_in_Revenue1))
+print("Greatest Decrease in Revenue: " +  '$' + str(Greatest_Decrease_in_Revenue1))
+
+
+print("Financial Analysis 2" + "\n + ----------------------------------" )
+
+Total_Months2 = monthcount2
+print("Total Months: " + str(Total_Months2))
+
+Total_Revenue2 = totalrevenue2
+print("Total Revenue: "+ '$' + str(Total_Revenue2))
+
+Average_Revenue_Change2 = (revenuechange2) / Total_Months2
+print("Average Revenue Change: " + '$' + str(Average_Revenue_Change2))
+
+print("Greatest Increase in Revenue: " + '$' + str(Greatest_Increase_in_Revenue2))
+print("Greatest Decrease in Revenue: " + '$' + str(Greatest_Decrease_in_Revenue2))
